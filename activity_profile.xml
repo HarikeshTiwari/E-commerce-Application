@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <ImageButton
+        android:id="@+id/imgLogout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/imgHelp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:paddingRight="300dp"
+        android:scaleType="fitCenter"
+        android:paddingEnd="300dp"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageButton
+        android:id="@+id/imgHelpSupport"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/imgPassword"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:paddingRight="300dp"
+        android:scaleType="fitCenter"
+        app:backgroundTint="#FFFFFF"
+        android:paddingEnd="300dp"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageButton
+        android:id="@+id/imgPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvSettings"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:paddingTop="10dp"
+        android:paddingRight="300dp"
+        android:paddingBottom="10dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_edit"
+        tools:ignore="RtlSymmetry,VectorDrawableCompat"
+        android:paddingEnd="300dp" />
+
+    <TextView
+        android:id="@+id/tvPasswordSetting"
+        android:layout_width="244dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/tvSettings"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:background="#9CFFFFFF"
+        android:text="@string/change_password"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvSettings"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgNotification"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/settings"
+        android:textColor="#03A9F4"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imgPhoto"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_profile" />
+
+    <TextView
+        android:id="@+id/tvProfileName"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/imgPhoto"
+        android:text="@string/profile"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_toEndOf="@id/imgPhoto" />
+
+    <TextView
+        android:id="@+id/tvAccount"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgPhoto"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/my_account"
+        android:textColor="#03A9F4"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/imgAcc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvAccount"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:background="#ffffff"
+        android:paddingTop="10dp"
+        android:paddingRight="300dp"
+        android:paddingBottom="10dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_profile"
+        tools:ignore="RtlSymmetry,VectorDrawableCompat"
+        android:paddingEnd="300dp" />
+
+    <ImageButton
+        android:id="@+id/imgNotification"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/imgAcc"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:paddingTop="10dp"
+        android:paddingRight="300dp"
+        android:paddingBottom="10dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_notification"
+        tools:ignore="RtlSymmetry,VectorDrawableCompat"
+        android:paddingEnd="300dp" />
+
+
+    <TextView
+        android:id="@+id/tvAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAccount"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/account_details"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvNotification"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgAcc"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:background="#9CFFFFFF"
+        android:text="@string/notifications"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvHelp"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgPassword"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/help_support"
+        android:textColor="#03A9F4"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvLogout"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgHelpSupport"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/logout"
+        android:textColor="#03A9F4"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/imgHelp"
+        android:layout_width="59dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/imgPassword"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tvHelp"
+        android:background="#FFFFFF"
+        app:srcCompat="@drawable/ic_help"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_toEndOf="@id/tvHelp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgHelpSupport"
+        android:layout_marginStart="135dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tvLogout"
+        android:background="#FFFFFF"
+        app:srcCompat="@android:drawable/ic_lock_power_off"
+        android:layout_toEndOf="@id/tvLogout" />
+    <ImageButton
+        android:id="@+id/img3"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/tvExplore"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="5dp"
+        android:background="#FFFFFF"
+        app:srcCompat="@drawable/ic_explore"
+        tools:ignore="VectorDrawableCompat" />
+    <TextView
+        android:id="@+id/tvExplore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/explore"
+        android:textColor="@color/black" />
+    <ImageButton
+        android:id="@+id/img4"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/tvExplore"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/img3"
+        android:background="#FFFFFF"
+        app:srcCompat="@drawable/ic_dashboard"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_toEndOf="@id/img3" />
+    <TextView
+        android:id="@+id/tvDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/tvExplore"
+        android:text="@string/dashboard"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@id/tvExplore" />
+
+    <ImageButton
+        android:id="@+id/img5"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/tvExplore"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/img4"
+        android:background="#FFFFFF"
+        app:srcCompat="@drawable/ic_profile"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_toEndOf="@id/img4" />
+
+    <TextView
+        android:id="@+id/tvDashboard2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/tvDashboard"
+        android:text="@string/profile"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@id/tvDashboard" />
+
+</RelativeLayout>

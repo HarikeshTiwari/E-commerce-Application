@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashBoard">
+
+    <TextView
+        android:id="@+id/tvView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Browse gadgets"
+        android:textColor="#03A9F4"
+        android:textSize="18sp"
+        android:layout_marginLeft="30dp" />
+    <SearchView
+        android:id="@+id/svSearch"
+        android:layout_width="393dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvView1"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search by device name" />
+
+
+
+    <TextView
+        android:id="@+id/tvView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/svSearch"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/best_devices"
+        android:textColor="#03A9F4"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/svSearch"
+        android:layout_marginStart="170dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tvView2"
+        android:text="View All"
+        android:textColor="#03A9F4"
+        android:layout_toEndOf="@id/tvView2" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:layout_alignParentBottom="true" />
+    <TextView
+        android:id="@+id/tvExplore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/explore"
+        android:textColor="@color/black" />
+
+    <ImageButton
+        android:id="@+id/img"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/tvExplore"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="5dp"
+        android:background="#FFFFFF"
+        app:srcCompat="@drawable/ic_explore"
+        tools:ignore="VectorDrawableCompat" />
+    <TextView
+        android:id="@+id/tvDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/tvExplore"
+        android:text="@string/dashboard"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@id/tvExplore" />
+    <ImageButton
+        android:id="@+id/img1"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/tvExplore"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/img"
+        android:background="#FFFFFF"
+        app:srcCompat="@drawable/ic_dashboard"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_toEndOf="@id/img" />
+
+
+    <TextView
+        android:id="@+id/tvDashboard2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/tvDashboard"
+        android:text="@string/profile"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@id/tvDashboard" />
+
+    <ImageButton
+        android:id="@+id/img2"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/tvExplore"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/img1"
+        android:background="#FFFFFF"
+        app:srcCompat="@drawable/ic_profile"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_toEndOf="@id/img1" />
+
+
+
+    <ImageButton
+        android:id="@+id/imgCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/white"
+        app:srcCompat="@drawable/ic_cart"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_alignParentEnd="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_below="@+id/tvView2">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:id="@+id/tvBrowse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rvRecycler"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/best_devices"
+        android:textColor="#03A9F4"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/tvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rvRecycler"
+        android:layout_marginStart="170dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tvView2"
+        android:text="@string/view_all"
+        android:textColor="#03A9F4"
+        android:layout_toEndOf="@id/tvView2" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRecycler2"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_below="@+id/tvBrowse"
+        android:layout_marginTop="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <ListView
+        android:id="@+id/listOfItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp" />
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductPage">
+
+    <ImageView
+        android:id="@+id/imgShow"
+        android:layout_width="298dp"
+        android:layout_height="346dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgShow"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgShow"
+        android:layout_marginStart="190dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvProductDescription"
+        android:layout_width="308dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/tvProduct"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnAsk"
+        android:layout_width="181dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-6dp"
+        android:text="Ask to friend"
+        android:textColor="@color/black"
+        app:backgroundTint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnCart"
+        android:layout_width="230dp"
+        android:layout_height="71dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-6dp"
+        android:layout_toRightOf="@id/btnAsk"
+        android:text="Add to cart"
+        app:backgroundTint="#03A9F4" />
+</RelativeLayout>

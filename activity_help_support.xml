@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpSupport">
+    <TextView
+        android:id="@+id/tvHelpSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/help_and_support"
+        android:textColor="#03A9F4"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHelpSupport"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/e_mail"
+        android:textColor="#03A9F4"
+        android:textSize="18sp"
+        android:layout_marginStart="30dp" />
+
+    <TextView
+        android:id="@+id/tvSubject"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmailValue"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/subject"
+        android:textColor="#03A9F4"
+        android:textSize="18sp"
+        android:layout_marginStart="30dp" />
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etProblemValue"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#03A9F4"
+        android:text="@string/submit"
+        android:layout_marginStart="30dp" />
+
+    <EditText
+        android:id="@+id/etEmailValue"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvEmail"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_marginStart="30dp"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/etSubjectValue"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSubject"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_marginStart="30dp" />
+
+    <TextView
+        android:id="@+id/tvProblem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSubjectValue"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/problem_description"
+        android:textColor="#03A9F4"
+        android:textSize="18sp"
+        android:layout_marginStart="30dp" />
+
+    <EditText
+        android:id="@+id/etProblemValue"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvProblem"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_marginStart="30dp" />
+
+
+</RelativeLayout>
